@@ -12,6 +12,10 @@ body {
   width: 1110px;
 }
 
+img {
+  width: 100%;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -28,6 +32,10 @@ body {
           align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.navbar-top__menu-button {
+  display: none;
 }
 
 .navbar__search {
@@ -103,6 +111,11 @@ body {
   background-color: #EC1F46;
 }
 
+.search__image {
+  width: 12px;
+  height: 12px;
+}
+
 .user {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,31 +147,72 @@ body {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px) and (min-width: 576px) {
   .container {
     max-width: 700px;
+  }
+  .navbar .logo {
+    width: 132px;
   }
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .navbar-menu {
+  -menu {
     padding-top: 22px;
     padding-bottom: 22px;
   }
-  .navbar-menu__link {
-    font-size: 12px;
+  -menu__link {
+    font-size: 14px;
     line-height: 15px;
   }
   .navbar__search {
     margin-left: auto;
   }
+  .search__input {
+    width: 340px;
+  }
 }
 
-@media (max-width: 772px) {
+@media (max-width: 768px) {
   .container {
-    max-width: 567px;
+    max-width: 576px;
     width: 92%;
+  }
+  .container .navbar__search, .container .navbar__user, .container .navbar-menu {
+    display: none;
+  }
+  .container .menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 16px;
+    height: 11px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #ffffff;
+    border: none;
+    color: #ffffff;
+  }
+  .container .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 99px;
   }
 }
 /*# sourceMappingURL=style.css.map */
