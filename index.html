@@ -12,6 +12,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/swiper-bundle.min.css">
 <link rel="stylesheet" href="css/normalize.css">
 </head>
@@ -109,9 +112,9 @@
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide"><img src="images/slide_one.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="images/slide_one.jpg" alt=""></div>
-    <div class="swiper-slide"><img src="images/slide_one.jpg" alt=""></div>
+    <div class="swiper-slide"><img class="swiper__image" src="images/slide_one.jpg" alt=""></div>
+    <div class="swiper-slide"><img class="swiper__image" src="images/slide_one.jpg" alt=""></div>
+    <div class="swiper-slide"><img class="swiper__image" src="images/slide_one.jpg" alt=""></div>
     ...
   </div>
 
@@ -123,34 +126,39 @@
        </div>
        <!-- end swiper-container -->
      </div>
-     <div class="booking">
-       <div class="booking__info">
-         <div class="booking__price">
-           <span class="booking__start">price starts as</span>
-           <strong class="booking__pricetag">$ 8,500</strong>
-           <span class="booking__per-room">per room / night</span>
-         </div>
-         <div class="booking-room">
-           <div class="booking__text">
-            <img src="images/user-icon.svg" alt="icon: user" class="booking__icon">
-            <span class="booking__description">2 x Guests</span>
-           </div>
-           <div class="booking__text">
-            <img src="images/home-icon.svg" alt="icon: home" class="booking__icon">
-            <span class="booking__description">1 x Room</span>
-           </div>
-         </div>
-       </div>
-       <div class="call-center">
-         <span class="call-center__text"></span>
-         <a class="call-center__number" href="tel:12100">
-           <img src="images/phone-call__icon.svg" alt="icon: phone" class="booking__icon">
-           <span class="call-center__numbers">12100</span>
-         </a>
-       </div>
-       <button class="button booking__button">
-        View Other Options
-       </button>
+     <div class="hotel-right">
+      <div class="booking">
+        <div class="booking__info">
+          <div class="booking__price">
+            <span class="booking__start">price starts as</span>
+            <strong class="booking__pricetag">$ 8,500</strong>
+            <span class="booking__per-room">per room / night</span>
+          </div>
+          <div class="booking-room">
+            <div class="booking__text">
+             <img src="images/user-icon.svg" alt="icon: user" class="booking__icon">
+             <span class="booking__description">2 x Guests</span>
+            </div>
+            <div class="booking__text">
+             <img src="images/home-icon.svg" alt="icon: home" class="booking__icon">
+             <span class="booking__description">1 x Room</span>
+            </div>
+          </div>
+        </div>
+        <div class="booking__call-center">
+          <span class="booking__heading">Quick Booking</span>
+          <a class="booking__number" href="tel:12100">
+            <img src="images/phone-call__icon.svg" alt="icon: phone" class="booking__icon">
+            <span class="booking__num">12100</span>
+          </a>
+        </div>
+        <button class="button booking__button">
+         View Other Options
+        </button>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11623035.846218113!2d27.750136274268066!3d44.665395097073514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4051d3e4eb6afd5d%3A0x2372670e5d591c5b!2z0J7RgtC10LvRjCDQk9GA0L7Qt9C90YvQuSDQodC40YLQuA!5e0!3m2!1sru!2sru!4v1653683180266!5m2!1sru!2sru" width="347" height="213" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
      </div>
    </div>
   </section>
