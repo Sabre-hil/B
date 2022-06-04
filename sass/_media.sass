@@ -15,7 +15,13 @@
       margin-right: 20px
     &-grid
       width: 960px
-@media (max-width: 992px) and (min-width: 576px)
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+  .card
+    width: 49%
+    height: 49%
+@media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
   .navbar
@@ -61,7 +67,8 @@
     &__card
       margin-bottom: 20px
   .card
-    width: 340px
+    max-width: 49%
+    height: 255px
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -152,7 +159,7 @@
     padding-top: 40px
     padding-bottom: 60px
   .card
-    width: 49px
+    width: 49%
     height: 255px
 @media ( max-width: 576px )
   .logo
@@ -190,10 +197,9 @@
       width: 100%
     &__titly
       margin-bottom: 37px
+  .activities
+    &-wrapper
+      flex-direction: column
   .card
-    width: 100%
-
-
-        
-  
+    max-width: 100%
   
